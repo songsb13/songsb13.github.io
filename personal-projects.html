@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Projects — Simon Song</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; }
+    ::selection { background: rgba(0,0,0,0.12); }
+  </style>
+</helmet>
+
+<div style="background:oklch(0.98 0.006 85); color:oklch(0.2 0.01 85); min-height:100vh; width:100%;">
+
+  <!-- NAV -->
+  <header style="position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; padding:0 40px; height:64px; border-bottom:1px solid oklch(0.88 0.008 85); background:oklch(0.98 0.006 85 / 0.85); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
+    <a href="index.html" style="display:flex; align-items:center; gap:12px; text-decoration:none; color:oklch(0.2 0.01 85);">
+      <span style="width:32px; height:32px; border:1.5px solid oklch(0.2 0.01 85); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:12px;">SS</span>
+      <span style="font-weight:600; font-size:14px; letter-spacing:0.01em;">Simon Song</span>
+    </a>
+    <nav style="display:flex; align-items:center; gap:28px;">
+      <a href="portfolio.html#about" style="text-decoration:none; color:oklch(0.42 0.01 85); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;" style-hover="color:oklch(0.2 0.01 85);">About</a>
+      <a href="portfolio.html#work" style="text-decoration:none; color:oklch(0.42 0.01 85); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;" style-hover="color:oklch(0.2 0.01 85);">Work</a>
+      <a href="personal-projects.html" style="text-decoration:none; color:{{ accent }}; font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase; font-weight:600;">Projects</a>
+      <a href="portfolio.html#experience" style="text-decoration:none; color:oklch(0.42 0.01 85); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;" style-hover="color:oklch(0.2 0.01 85);">Experience</a>
+      <a href="portfolio.html#skills" style="text-decoration:none; color:oklch(0.42 0.01 85); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;" style-hover="color:oklch(0.2 0.01 85);">Skills</a>
+      <a href="portfolio.html#contact" style="text-decoration:none; color:oklch(0.42 0.01 85); font-size:12.5px; letter-spacing:0.03em; text-transform:uppercase;" style-hover="color:oklch(0.2 0.01 85);">Contact</a>
+      <a download="" href="Simon-Song-Resume.pdf" style="text-decoration:none; color:{{ accent }}; border:1px solid {{ accent }}; padding:7px 14px; font-size:12px; letter-spacing:0.03em; text-transform:uppercase; font-weight:600;" style-hover="background:{{ accent }}; color:oklch(0.99 0.005 85);">Résumé ↓</a>
+    </nav>
+  </header>
+
+  <main style="max-width:1120px; margin:0 auto; padding:0 40px;">
+
+    <!-- BREADCRUMB -->
+    <div style="padding:32px 0 0;">
+      <a href="portfolio.html" style="text-decoration:none; font-size:13px; color:oklch(0.5 0.01 85);" style-hover="color:{{ accent }};">← Back to main page</a>
+    </div>
+
+    <!-- HERO -->
+    <section style="padding:40px 0 56px;">
+      <p style="margin:0 0 20px; font-size:13px; letter-spacing:0.02em; color:{{ accent }}; font-weight:600;">// personal project · agentic ai &amp; trading</p>
+      <h1 style="margin:0 0 20px; font-size:56px; font-weight:700; letter-spacing:-0.02em; line-height:1.05; color:oklch(0.16 0.01 85);">Turtle Trading Agent</h1>
+      <p style="margin:0; font-size:19px; font-weight:500; color:oklch(0.42 0.01 85); max-width:680px; line-height:1.5;">A system of autonomous trading agents that run the classic "turtle" trend-following strategy against real-time market data, with a transformer model in training to push decisions beyond fixed rules.</p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:28px;">
+        <span style="font-size:12px; border:1px solid oklch(0.85 0.008 85); color:oklch(0.35 0.01 85); padding:5px 11px;">Agentic Pipelines</span>
+        <span style="font-size:12px; border:1px solid oklch(0.85 0.008 85); color:oklch(0.35 0.01 85); padding:5px 11px;">Microservices</span>
+        <span style="font-size:12px; border:1px solid oklch(0.85 0.008 85); color:oklch(0.35 0.01 85); padding:5px 11px;">Redis Queue</span>
+        <span style="font-size:12px; border:1px solid oklch(0.85 0.008 85); color:oklch(0.35 0.01 85); padding:5px 11px;">Brokerage REST / WebSocket APIs</span>
+        <span style="font-size:12px; border:1px solid oklch(0.85 0.008 85); color:oklch(0.35 0.01 85); padding:5px 11px;">Informer (Transformer)</span>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section style="padding:56px 0; border-top:1px solid oklch(0.88 0.008 85);">
+      <p style="margin:0 0 8px; font-size:13px; letter-spacing:0.03em; text-transform:uppercase; color:{{ accent }}; font-weight:600;">Overview</p>
+      <h2 style="margin:0 0 20px; font-size:26px; font-weight:700; color:oklch(0.16 0.01 85);">What it does</h2>
+      <p style="margin:0 0 16px; font-size:15.5px; line-height:1.75; color:oklch(0.32 0.01 85); max-width:680px;">Each ticker is watched by its own agent: it connects to a brokerage's open APIs to read real-time OHLCV (open/high/low/close/volume) and order-book data, then decides on its own when to act on entry and exit signals for a trend-following strategy.</p>
+      <p style="margin:0; font-size:15.5px; line-height:1.75; color:oklch(0.32 0.01 85); max-width:680px;">Rather than a single monolithic script, the system is split into microservices so signal detection and order submission can run concurrently and autonomously across many tickers, communicating over a Redis queue for fast, low-overhead messaging between agents.</p>
+    </section>
+
+    <!-- THE STRATEGY -->
+    <section style="padding:56px 0; border-top:1px solid oklch(0.88 0.008 85);">
+      <p style="margin:0 0 8px; font-size:13px; letter-spacing:0.03em; text-transform:uppercase; color:{{ accent }}; font-weight:600;">Background</p>
+      <h2 style="margin:0 0 20px; font-size:26px; font-weight:700; color:oklch(0.16 0.01 85);">The "turtle" strategy</h2>
+      <p style="margin:0; font-size:15.5px; line-height:1.75; color:oklch(0.32 0.01 85); max-width:680px;">Turtle trading is a well-known trend-following approach originally taught to a group of novice traders in the 1980s: it enters positions on price breakouts beyond a recent high/low range and manages risk with volatility-based position sizing and trailing stops. This agent implements that breakout logic as its core signal, evaluated continuously against live market data instead of end-of-day prices.</p>
+    </section>
+
+    <!-- SYSTEM DESIGN -->
+    <section style="padding:56px 0; border-top:1px solid oklch(0.88 0.008 85);">
+      <p style="margin:0 0 8px; font-size:13px; letter-spacing:0.03em; text-transform:uppercase; color:{{ accent }}; font-weight:600;">Architecture</p>
+      <h2 style="margin:0 0 32px; font-size:26px; font-weight:700; color:oklch(0.16 0.01 85);">System design</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+        <div style="border:1px solid oklch(0.88 0.008 85); background:oklch(1 0 0); padding:24px;">
+          <div style="font-size:13px; font-weight:700; color:{{ accent }}; margin-bottom:10px;">Data</div>
+          <p style="margin:0; font-size:14px; line-height:1.65; color:oklch(0.38 0.01 85);">Real-time OHLCV and order-book data streamed from a brokerage's open APIs, watched across multiple stocks in parallel.</p>
+        </div>
+        <div style="border:1px solid oklch(0.88 0.008 85); background:oklch(1 0 0); padding:24px;">
+          <div style="font-size:13px; font-weight:700; color:{{ accent }}; margin-bottom:10px;">Coordination</div>
+          <p style="margin:0; font-size:14px; line-height:1.65; color:oklch(0.38 0.01 85);">Independent microservices handle signal detection and order submission, communicating through a Redis queue to stay fast and decoupled.</p>
+        </div>
+        <div style="border:1px solid oklch(0.88 0.008 85); background:oklch(1 0 0); padding:24px;">
+          <div style="font-size:13px; font-weight:700; color:{{ accent }}; margin-bottom:10px;">Agentic forecasting</div>
+          <p style="margin:0; font-size:14px; line-height:1.65; color:oklch(0.38 0.01 85);">An Informer model — a transformer architecture built for long time-series data — is being trained on real-time data so the agents can reason and act on forecasts, not just fixed rules.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section style="padding:64px 0 80px; border-top:1px solid oklch(0.88 0.008 85); text-align:center;">
+      <h2 style="margin:0 0 16px; font-size:28px; font-weight:700; color:oklch(0.16 0.01 85);">Curious about the details?</h2>
+      <p style="margin:0 0 32px; font-size:15px; color:oklch(0.42 0.01 85);">Happy to walk through the implementation.</p>
+      <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:16px; margin-bottom:48px;">
+        <a href="mailto:songsb13@gmail.com" style="text-decoration:none; background:{{ accent }}; color:oklch(0.99 0.005 85); font-size:14px; font-weight:600; padding:13px 24px;">songsb13@gmail.com</a>
+        <a href="https://github.com/songsb13" target="_blank" rel="noopener noreferrer" style="text-decoration:none; border:1px solid oklch(0.7 0.01 85); color:oklch(0.2 0.01 85); font-size:14px; font-weight:600; padding:13px 24px;" style-hover="border-color:oklch(0.2 0.01 85);">GitHub</a>
+        <a href="portfolio.html" style="text-decoration:none; border:1px solid oklch(0.7 0.01 85); color:oklch(0.2 0.01 85); font-size:14px; font-weight:600; padding:13px 24px;" style-hover="border-color:oklch(0.2 0.01 85);">Back to main page</a>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; padding-top:24px; border-top:1px solid oklch(0.9 0.008 85); font-size:12px; color:oklch(0.55 0.01 85);">
+        <span>© {{ year }} Simon Song</span>
+        <a href="#top" style="color:oklch(0.55 0.01 85); text-decoration:none;" style-hover="color:{{ accent }};">Back to top ↑</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1440, &quot;height&quot;: 1400 },
+  &quot;accentColor&quot;: {
+    &quot;editor&quot;: &quot;color&quot;,
+    &quot;default&quot;: [&quot;oklch(0.55 0.13 152)&quot;, &quot;oklch(0.94 0.035 152)&quot;],
+    &quot;tsType&quot;: &quot;string[]&quot;,
+    &quot;options&quot;: [
+      [&quot;oklch(0.55 0.13 152)&quot;, &quot;oklch(0.94 0.035 152)&quot;],
+      [&quot;oklch(0.55 0.13 250)&quot;, &quot;oklch(0.94 0.035 250)&quot;],
+      [&quot;oklch(0.6 0.14 70)&quot;, &quot;oklch(0.95 0.035 70)&quot;],
+      [&quot;oklch(0.55 0.13 20)&quot;, &quot;oklch(0.95 0.03 20)&quot;]
+    ]
+  }
+}">
+class Component extends DCLogic {
+  renderVals() {
+    const accentPalette = this.props.accentColor ?? ["oklch(0.55 0.13 152)", "oklch(0.94 0.035 152)"];
+    const accent = accentPalette[0];
+    const accentTint = accentPalette[1];
+
+    return {
+      accent: accent,
+      accentTint: accentTint,
+      year: new Date().getFullYear()
+    };
+  }
+}
+</script>
+</body>
+</html>
